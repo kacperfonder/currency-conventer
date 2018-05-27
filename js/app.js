@@ -1,7 +1,6 @@
-let urlApi = 'http://api.nbp.pl/api/'
+let urlApi = 'https://api.fixer.io/latest'
 
-$(function() {
-
+  
 $.ajax({
     url: urlApi,
     method: "GET",
@@ -10,5 +9,13 @@ $.ajax({
     .done(function(response) {
       console.log(response);
     });
-});
+
+
+// $.ajax({
+//     url: urlApi, 
+//     type: "GET",
+//     success: function(result){
+//         $('img').attr('src',result.icon_url);
+//         $('.jokeContent').text(result.value)
+// }});  
 
