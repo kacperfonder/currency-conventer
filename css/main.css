@@ -14,8 +14,10 @@ body {
     background-color: rgba(255,255,255, 0.7);
     width: 500px;
     justify-content: center;
+    text-align: center;
 }
 head {
     padding: 50px;
-    display: inline
+    display: inline;
+    align-items: center;
 }
