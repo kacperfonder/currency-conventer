@@ -1,8 +1,8 @@
 $(function(){
 
-let urlApi = 'https://api.fixer.io/latest?base=AUD';
 let from = document.querySelector('.from');
 let to = document.querySelector('.to');
+let input = document.querySelector('.input')
 
 function loadCurrencies() {
 
@@ -28,9 +28,22 @@ function currenciesChange() {
             
         });
     }); 
-} 
+};
+function convert () {
 
+    $('form').on('submit', function(e) {
+        e.preventDefault();
 
+        let convertTo = $('.to').val();
+        let amount = $('.input').val();
+        let calc = amount * rates;
+        $('.result').push(parseFloat(calc));
+        console.log(convertTo , calc);
+        
+    });
+};
+
+convert();
 currenciesChange();
 loadCurrencies();
 });
