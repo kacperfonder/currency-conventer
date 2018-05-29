@@ -21,10 +21,8 @@ function currenciesChange() {
 
     $('.from').change(function(){
         var value = $('.from').val();
-        console.log(value);
         $.get('https://api.fixer.io/latest?base=' + value, function(newRates){
             rates = newRates.rates;
-            console.log(rates);
             
         });
     }); 
@@ -36,9 +34,8 @@ function convert () {
 
         let convertTo = $('.to').val();
         let amount = $('.input').val();
-        let calc = amount * rates;
-        $('.result').push(parseFloat(calc));
-        console.log(convertTo , calc);
+        let calc = amount * rates[convertTo];
+        $('.result').text(parseFloat(calc).toFixed(3));
         
     });
 };

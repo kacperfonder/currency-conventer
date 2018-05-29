@@ -6,18 +6,85 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: 30px;
+}
+.input {
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+span {
+    font-size: 15px;
+    font-weight: bolder;
 }
 .conventer {
     border: 1px solid black;
     border-radius: 30px;
     background-color: rgba(255,255,255, 0.7);
-    width: 500px;
+    width: 800px;
     justify-content: center;
     text-align: center;
 }
-head {
-    padding: 50px;
+.head {
+    padding: 20px 0 20px 0;
     display: inline;
     align-items: center;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+select {
+    display: flex;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+select:hover {
+    cursor: pointer;
+}
+.toSpan {
+    margin-right: 120px;
+}
+.fromSpan {
+    margin-left: 130px;
+}
+.from {
+    margin-left: 120px;
+}
+.to {
+    margin-right: 120px;
+}
+button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: tomato;
+    position: absolute;
+    right: 340px;
+    top: -30px;
+    width: 120px;
+    height: 30px;
+}
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.results {
+    display: flex;
+    justify-content: center;
+}
+.result {
+    margin-left: 10px;
+}
+.foot {
+    padding-top: 20px;
+    position: relative;
 }

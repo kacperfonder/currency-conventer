@@ -11,15 +11,31 @@
 </head>
 <body>
   <div class="conventer">
-    <span class='head'>Currency conventer 💰</span>
+    <h2 class='head'>💰 Currency conventer 💰</h2>
     <form>
-      <input placeholder="amount" class='input' type="number" min="0">
-      <select name="curr" class="from"></select>
-      <select name="currency" class="to"></select>
-      <div class='result'>
+      <div>
+        <input placeholder="Amount:" class='input' type="number" min="0">
+      </div>
+      <div class='wrapper'>
+          <div id='from'>
+              <span class='fromSpan'>From:</span> <br>
+              <select name="curr" class="from">
+                <option>--select--</option>
+              </select>
+          </div>
+          <div id='to'>
+              <span class='toSpan'>To:</span> <br>
+              <select name="currency" class="to">
+                  <option>--select--</option>
+              </select>
+          </div>
+      </div>
+      <div class='foot'>
         <button type="submit">Convert ⇆</button>
-        <h3>Equal</h3>
-        <h3 class='result'></h3>
+        <div class='results'>
+          <h3>Is Equal:</h3>
+          <h3 class='result'></h3>
+        </div>
       </div>
     </form>
   </div>
